@@ -1,6 +1,6 @@
 const express = require('express')
 
-const router = express.Router();
+const userRouter = express.Router();
 
 router.post('/signup',(req,res)=>{
 
@@ -16,24 +16,5 @@ router.post('/login',(req,res)=>{
     })
 })
 
-router.get('/getAllCourses',(req,res)=>{
-    
-    res.json({
-        message: "get courses endpoint"
-    })
-})
 
-router.get('/getPurchasedCourse',(req,res)=>{
-    
-    res.json({
-        message: "purchased courses endpoint"
-    })
-})
-
-router.post('/purchaseCourse',(req,res)=>{
-    res.json({
-        message: "purchasing endpoint"
-    })
-
-})
-module.exports = router;
+module.exports = userRouter;

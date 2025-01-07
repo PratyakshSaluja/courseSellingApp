@@ -1,11 +1,11 @@
 const express = require('express')
-const router = express.Router();
+const adminRouter = express.Router();
 
-router.post('/adminSignup',(req,res)=>{
+router.post('/signup',(req,res)=>{
 
 })
 
-router.post('/adminLogin',(req,res)=>{
+router.post('/login',(req,res)=>{
     
 })
 
@@ -21,6 +21,7 @@ router.post('/createCourseContent',(req,res)=>{
 
 })
 
+module.exports= adminRouter
 
 
 
